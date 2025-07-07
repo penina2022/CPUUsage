@@ -1,0 +1,20 @@
+{
+  "name": "faddom",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@aws-sdk/client-cloudwatch": "^3.808.0",
+    "@aws-sdk/client-ec2": "^3.808.0",
+    "config": "^3.3.12",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}
