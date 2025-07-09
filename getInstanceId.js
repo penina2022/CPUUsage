@@ -1,12 +1,12 @@
 const { EC2Client, DescribeInstancesCommand } = require("@aws-sdk/client-ec2");
+require('dotenv').config();
 
-// AWS credentials
 
 const ec2Client = new EC2Client({
-  region: REGION,
+  region: process.env.REGION,
   credentials: {
-    accessKeyId: ACCESS_KEY,
-    secretAccessKey: SECRET_KEY,
+    accessKeyId: process.env.AWS_ACCESS_KEY,
+    secretAccessKey: process.env.AWS_SECRET_KEY,
   },
 });
 

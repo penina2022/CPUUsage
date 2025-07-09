@@ -7,16 +7,15 @@ const {
 const getInstanceIdFromIP = require('./getInstanceId');
 const cors = require('cors');
 app.use(cors());
+require('dotenv').config();
 
 app.use(express.static('public'));
 
-// AWS credentials
-
 const cloudwatchClient = new CloudWatchClient({
-  region: REGION,
+  region: process.env.REGION,
   credentials: {
-    accessKeyId: ACCESS_KEY,
-    secretAccessKey: SECRET_KEY,
+    accessKeyId: process.env.AWS_ACCESS_KEY,
+    secretAccessKey: process.env.AWS_SECRET_KEY,
   },
 });
 

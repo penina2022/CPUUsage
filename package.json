@@ -15,6 +15,7 @@
     "@aws-sdk/client-ec2": "^3.808.0",
     "config": "^3.3.12",
     "cors": "^2.8.5",
+    "dotenv": "^17.1.0",
     "express": "^5.1.0"
   }
 }
